@@ -35,7 +35,7 @@ export default function AdminReports() {
 
   function exportCSV() {
     const rows = [
-      ['Tháng', 'Doanh thu (VND)', 'Số đơn'],
+      ['Ngày', 'Doanh thu (VND)', 'Số đơn'],
       ...mockMonthlyRevenue.map(r => [r.month, r.revenue, r.orders]),
     ];
     const csv = rows.map(r => r.join(',')).join('\n');
@@ -86,7 +86,7 @@ export default function AdminReports() {
 
       {/* Revenue chart */}
       <Card className="p-5 mb-5">
-        <h2 className="font-semibold text-gray-900 mb-4">Doanh thu theo tháng</h2>
+        <h2 className="font-semibold text-gray-900 mb-4">Doanh thu theo ngày</h2>
         <ResponsiveContainer width="100%" height={260}>
           <AreaChart data={mockMonthlyRevenue} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
             <defs>

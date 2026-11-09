@@ -88,7 +88,7 @@ export default function AdminDashboard() {
       <div className="grid lg:grid-cols-3 gap-5 mb-5">
         {/* Revenue area chart */}
         <Card className="p-5 lg:col-span-2">
-          <h2 className="font-semibold text-gray-900 mb-4">Doanh thu theo tháng (Demo)</h2>
+          <h2 className="font-semibold text-gray-900 mb-4">Doanh thu theo ngày (Demo)</h2>
           <ResponsiveContainer width="100%" height={220}>
             <AreaChart data={mockMonthlyRevenue} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
               <defs>
@@ -132,7 +132,7 @@ export default function AdminDashboard() {
       <div className="grid lg:grid-cols-3 gap-5 mb-5">
         {/* Orders bar */}
         <Card className="p-5 lg:col-span-2">
-          <h2 className="font-semibold text-gray-900 mb-4">Đơn hàng theo tháng (Demo)</h2>
+          <h2 className="font-semibold text-gray-900 mb-4">Đơn hàng theo ngày (Demo)</h2>
           <ResponsiveContainer width="100%" height={200}>
             <BarChart data={mockMonthlyRevenue} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0"/>
