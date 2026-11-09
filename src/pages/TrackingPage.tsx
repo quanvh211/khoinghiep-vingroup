@@ -42,7 +42,7 @@ export default function TrackingPage() {
         <Input
           value={query}
           onChange={e => { setQuery(e.target.value); setSearched(false); }}
-          placeholder="VD: KB-2024-0001 hoặc KB-BOX-001"
+          placeholder="VD: KB-2026-0001 hoặc KB-BOX-001"
           className="flex-1"
           onKeyDown={e => e.key === 'Enter' && handleSearch()}
         />
@@ -54,7 +54,7 @@ export default function TrackingPage() {
       {/* Quick links */}
       <div className="flex flex-wrap gap-2 mb-8">
         <span className="text-sm text-gray-400">Thử:</span>
-        {['KB-2024-0001','KB-2024-0007','KB-2024-0014'].map(code => (
+        {['KB-2026-0001','KB-2026-0007','KB-2026-0014'].map(code => (
           <button key={code} onClick={() => { setQuery(code); setSearched(true); }}
             className="text-sm text-[#0ea5e9] hover:underline">
             {code}

@@ -10,7 +10,7 @@ const PIE_COLORS = ['#1e3a5f','#0ea5e9','#f97316','#10b981','#8b5cf6'];
 
 export default function AdminReports() {
   const { customers, bookings, payments, packages } = useAppStore();
-  const [dateRange, setDateRange] = useState({ from: '2024-02-01', to: '2024-09-30' });
+  const [dateRange, setDateRange] = useState({ from: '2026-10-10', to: '2026-11-09' });
 
   const totalRevenue = payments.filter(p => p.status === 'paid').reduce((s, p) => s + p.amount, 0);
   const completedOrders = bookings.filter(b => b.status === 'completed').length;

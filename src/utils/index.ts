@@ -110,6 +110,6 @@ export function getBookingTimeline(status: BookingStatus) {
 
 export function generateBookingCode(): string {
   const n = Math.floor(Math.random() * 9000) + 1000;
-  return `KB-2024-${n}`;
+  return `KB-2026-${n}`;
 }
 

@@ -121,7 +121,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     const booking: Booking = {
       ...data,
       id: `b-${n}`,
-      bookingCode: `KB-2024-${String(n).padStart(4, '0')}`,
+      bookingCode: `KB-2026-${String(n).padStart(4, '0')}`,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };

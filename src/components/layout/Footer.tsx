@@ -89,7 +89,7 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-500">
-          <p>© 2024 KEEPBOX. Dữ liệu demo – không phải dịch vụ thực tế.</p>
+          <p>© 2026 KEEPBOX. Dữ liệu demo – không phải dịch vụ thực tế.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-gray-300">Điều khoản sử dụng</a>
             <a href="#" className="hover:text-gray-300">Chính sách bảo mật</a>

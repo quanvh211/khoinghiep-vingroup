@@ -180,7 +180,7 @@ export default function AdminWarehouse() {
       {/* Add box modal */}
       <Modal open={addModal} onClose={() => setAddModal(false)} title="Thêm thùng mới">
         <div className="space-y-4">
-          <Input label="Mã đơn hàng" value={newBox.bookingId} onChange={e => setNewBox(n => ({ ...n, bookingId: e.target.value }))} placeholder="VD: KB-2024-0001" required/>
+          <Input label="Mã đơn hàng" value={newBox.bookingId} onChange={e => setNewBox(n => ({ ...n, bookingId: e.target.value }))} placeholder="VD: KB-2026-0001" required/>
           <Textarea label="Mô tả nội dung" value={newBox.description} onChange={e => setNewBox(n => ({ ...n, description: e.target.value }))} placeholder="VD: Quần áo, sách vở..." required/>
           <Select label="Vị trí kho" value={newBox.warehouseLocationId} onChange={e => setNewBox(n => ({ ...n, warehouseLocationId: e.target.value }))}
             options={warehouseLocations.map(l => ({ value: l.id, label: `Khu ${l.shelf}` }))}/>
